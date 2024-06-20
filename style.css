@@ -20,7 +20,7 @@ body {
 }
 
 .section {
-    background-color: rgba(255, 255, 255, 0.7); /* 设置透明度为70%的白色背景 */
+    background-color: rgba(255, 255, 255, 0.85); /* 设置透明度为70%的白色背景 */
     padding: 2rem; /* 内边距 */
     text-align: center; /* 文本居中 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
