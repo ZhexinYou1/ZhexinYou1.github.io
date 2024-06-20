@@ -14,7 +14,6 @@ body {
 }
 
 .container {
-    height：400%；
     width: 90%; /* 调整容器宽度 */
     max-width: 1200px; /* 设置最大宽度以适配不同屏幕 */
     margin: 0 auto; /* 水平居中容器 */
