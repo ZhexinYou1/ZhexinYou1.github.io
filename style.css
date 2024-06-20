@@ -30,21 +30,18 @@ body {
     margin: 0 auto;
 }
 
-/* 当屏幕宽度至少为768px时，改为横向排列 */
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row; /* 改为横向排列 */
-    }
-    
-    .section {
-        /* 可选：为每个框框设置固定宽度或百分比宽度，以及适当的外边距以保持间距 */
-        flex: 1; /* 让每个.section等宽，如果希望它们平均分配空间 */
-        margin-right: 2rem; /* 为每个框框之间添加水平间距，最后一个可以使用margin-right: 0; 来去除右侧多余间距 */
-    }
+.container {
+    flex-direction: row; /* 改为横向排列 */
+}
 
-    .section:last-child {
-        margin-right: 0; /* 移除最右边框框的右侧外边距 */
-    }
+.section {
+    /* 可选：为每个框框设置固定宽度或百分比宽度，以及适当的外边距以保持间距 */
+    flex: 1; /* 让每个.section等宽，如果希望它们平均分配空间 */
+    margin-right: 2rem; /* 为每个框框之间添加水平间距，最后一个可以使用margin-right: 0; 来去除右侧多余间距 */
+}
+
+.section:last-child {
+    margin-right: 0; /* 移除最右边框框的右侧外边距 */
 }
 
 /* 其他样式保持不变 */
