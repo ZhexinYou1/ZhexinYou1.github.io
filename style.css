@@ -5,7 +5,7 @@ body, html {
 }
 
 body {
-    background-image: url('Background.png'); /* 替换为你的背景图片URL */
+    background-image: url('Background.jpg'); /* 替换为你的背景图片URL */
     background-size: cover; /* 使背景图片适应容器 */
     background-position: center center; /* 图片居中 */
     display: flex; /* 使用Flexbox布局 */
