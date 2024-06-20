@@ -19,6 +19,14 @@ body {
     margin: 0 auto; /* 水平居中容器 */
 }
 
+.container {
+    display: flex;
+    flex-direction: column; /* 改为竖向排列 */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* 添加竖直间距，这里设置为2rem，可以根据需要调整 */
+    /* 其他样式保持不变 */
+
 .section {
     background-color: rgba(255, 255, 255, 0.85); /* 设置透明度为70%的白色背景 */
     padding: 2rem; /* 内边距 */
