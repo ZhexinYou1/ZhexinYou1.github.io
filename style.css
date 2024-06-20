@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: column; /* 默认为竖向排列，适用于窄屏 */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 2rem;
     width: 90%;
     max-width: 1200px;
