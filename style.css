@@ -13,6 +13,16 @@ body {
     align-items: center; /* 垂直居中 */
 }
 
+.header-bar {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 横向居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    background-color: #f0f0f0; /* 示例背景颜色，可自定义 */
+    padding: 10px 0; /* 上下内边距，可根据需要调整 */
+    width: 100%;
+    position: relative; /* 为可能的绝对定位子元素提供定位上下文 */
+}
+
 .container {
     width: 90%; /* 调整容器宽度 */
     max-width: 1200px; /* 设置最大宽度以适配不同屏幕 */
@@ -25,6 +35,7 @@ body {
     justify-content: center;
     /* align-items: center; */
     gap: 4rem;
+    margin-top: 2rem; /* 示例间距，可根据需要调整 */
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
