@@ -24,7 +24,7 @@ body {
     flex-direction: column; /* 默认为竖向排列，适用于窄屏 */
     justify-content: center;
     /* align-items: center; */
-    gap: 2rem;
+    gap: 4rem;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
