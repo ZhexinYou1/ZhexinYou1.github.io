@@ -17,7 +17,7 @@ body {
     display: flex; /* 使用Flexbox布局 */
     justify-content: center; /* 横向居中对齐 */
     align-items: center; /* 垂直居中对齐 */
-    background-color: #f0f0f0; /* 示例背景颜色，可自定义 */
+    background-color: #ffffff; /* 设置背景颜色为白色 */
     padding: 10px 0; /* 上下内边距，可根据需要调整 */
     width: 100%;
     position: relative; /* 为可能的绝对定位子元素提供定位上下文 */
