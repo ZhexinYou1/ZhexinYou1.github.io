@@ -3,84 +3,68 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
 body {
-    background-image: url('background.jpg'); /* 替换为你的背景图片URL */
-    background-size: cover; /* 使背景图片适应容器 */
-    background-position: center center; /* 图片居中 */
-    display: flex; /* 使用Flexbox布局 */
-    justify-content: space-around; /* 水平间距均匀分布 */
-    align-items: center; /* 垂直居中 */
-}
-
-.header-bar {
-    display: flex; /* 使用Flexbox布局 */
-    justify-content: center; /* 横向居中对齐 */
-    align-items: center; /* 垂直居中对齐 */
-    background-color: #ffffff; /* 设置背景颜色为白色 */
-    padding: 10px 0; /* 上下内边距，可根据需要调整 */
-    width: 100%;
-    position: relative; /* 为可能的绝对定位子元素提供定位上下文 */
-}
-
-.container {
-    width: 90%; /* 调整容器宽度 */
-    max-width: 1200px; /* 设置最大宽度以适配不同屏幕 */
-    margin: 0 auto; /* 水平居中容器 */
-}
-
-.container {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column; /* 默认为竖向排列，适用于窄屏 */
     justify-content: center;
-    /* align-items: center; */
-    gap: 4rem;
-    margin-top: 2rem; /* 示例间距，可根据需要调整 */
+    align-items: center;
+}
+.header-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+}
+.container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto 0; /* 上边距调整，去除底部外边距 */
+    display: flex;
+    flex-direction: row; /* 默认横向排列，若需适应窄屏切换为列，应放在媒体查询内 */
+    gap: 4rem;
 }
-
-.container {
-    flex-direction: row; /* 改为横向排列 */
-}
-
 .section {
-    /* 可选：为每个框框设置固定宽度或百分比宽度，以及适当的外边距以保持间距 */
-    flex: 1; /* 让每个.section等宽，如果希望它们平均分配空间 */
-    margin-right: 2rem; /* 为每个框框之间添加水平间距，最后一个可以使用margin-right: 0; 来去除右侧多余间距 */
+    flex: 1;
+    margin-right: 2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
-
 .section:last-child {
-    margin-right: 0; /* 移除最右边框框的右侧外边距 */
+    margin-right: 0;
 }
-
-/* 其他样式保持不变 */
-
-.section {
-    background-color: rgba(255, 255, 255, 0.85); /* 设置透明度为70%的白色背景 */
-    padding: 2rem; /* 内边距 */
-    text-align: center; /* 文本居中 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-    border-radius: 5px; /* 边框圆角 */
-    transition: all 0.3s ease; /* 平滑过渡效果 */
-}
-
 .section:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 鼠标悬停时增强阴影效果 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
 h2 a, ul a {
-    text-decoration: none; /* 移除链接下划线 */
-    color: #333; /* 链接颜色 */
+    text-decoration: none;
+    color: #333;
 }
-
 ul {
-    list-style-type: none; /* 移除列表项前的标记 */
+    list-style-type: none;
     padding: 0;
     margin-top: 1rem;
 }
-
 ul li {
     margin-bottom: 0.5rem;
+}
+/* 如果需要在小屏幕下改为竖向排列，可以加入以下媒体查询 */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+    .section {
+        margin-right: 0; /* 在列布局下不需要右侧外边距 */
+        margin-bottom: 2rem; /* 添加底部外边距以分隔每个框 */
+    }
+    .section:last-child {
+        margin-bottom: 0; /* 移除最后一个框的底部外边距 */
+    }
 }
