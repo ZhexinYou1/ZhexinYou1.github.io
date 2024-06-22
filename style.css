@@ -11,6 +11,12 @@ body {
     background-position: center;
 }
 
+.section ul {
+    background-color: #f1f1f1; /* 替换为您想要的背景色 */
+    padding: 10px; /* 根据需要调整内边距，使背景与内容之间有空间 */
+    margin: 0; /* 可能需要重置默认的外边距 */
+}
+
 .section h2 {
     background-color: #f1f1f1; /* 示例颜色，可替换为您喜欢的颜色 */
     padding: 10px; /* 根据需要调整内边距 */
@@ -22,11 +28,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #2F4F4F;
     /* 在左右两侧各添加边界，例如20px */
     padding: 20px 20px; 
     opacity: 0.85;
-    background-color: rgba(255, 255, 255, 0.85)
+    /* background-color: rgba(255, 255, 255, 0.85) */
     width: 100%;
 }
 
