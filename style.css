@@ -24,6 +24,10 @@ body {
     margin-bottom: 10px; /* 保持段落间距，按需调整 */
 }
 
+.section ul li {
+    margin-bottom: 10px; /* 或者根据需要调整的间隔大小 */
+}
+
 .header-bar {
     display: flex;
     justify-content: center;
