@@ -4,12 +4,11 @@ body, html {
     padding: 0;
 }
 body {
+    display: flex;
+    flex-direction: column; /* 确保内容垂直堆叠 */
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .header-bar {
     display: flex;
@@ -18,15 +17,17 @@ body {
     background-color: #ffffff;
     padding: 10px 0;
     width: 100%;
+    /* 无需特别定位，正常文档流中应自然位于顶部 */
 }
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 2rem auto 0; /* 上边距调整，去除底部外边距 */
+    margin: 2rem auto 0; /* 上边距确保与.header-bar有间隔 */
     display: flex;
-    flex-direction: row; /* 默认横向排列，若需适应窄屏切换为列，应放在媒体查询内 */
+    flex-direction: row; /* 横向排列 */
     gap: 4rem;
 }
+
 .section {
     flex: 1;
     margin-right: 2rem;
