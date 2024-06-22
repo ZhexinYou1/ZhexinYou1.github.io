@@ -10,15 +10,17 @@ body {
     background-size: cover;
     background-position: center;
 }
+
 .header-bar {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    padding: 10px 0;
+    /* 在左右两侧各添加边界，例如20px */
+    padding: 20px 20px; 
     width: 100%;
-    /* 无需特别定位，正常文档流中应自然位于顶部 */
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
