@@ -11,6 +11,13 @@ body {
     background-position: center;
 }
 
+.section h2 {
+    background-color: #f1f1f1; /* 示例颜色，可替换为您喜欢的颜色 */
+    padding: 10px; /* 根据需要调整内边距 */
+    display: inline-block;
+    margin-bottom: 10px; /* 保持段落间距，按需调整 */
+}
+
 .header-bar {
     display: flex;
     justify-content: center;
