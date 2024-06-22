@@ -27,6 +27,7 @@ body {
 .header-bar {
     display: flex;
     justify-content: center;
+    color: #ffffff; /* 设置字体颜色为白色 */
     align-items: center;
     background-color: #2F4F4F;
     /* 在左右两侧各添加边界，例如20px */
